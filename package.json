@@ -1,6 +1,6 @@
 {
   "name": "hackernews-tui",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "description": "A terminal UI for browsing Hacker News with search, filters, and deep threads.",
   "module": "src/index.tsx",
   "type": "module",
@@ -52,5 +52,8 @@
     "@opentui/core": "^0.1.84",
     "@opentui/react": "^0.1.84",
     "react": "^19.2.4"
+  },
+  "overrides": {
+    "diff": "8.0.3"
   }
 }
