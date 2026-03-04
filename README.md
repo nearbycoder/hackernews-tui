@@ -1,6 +1,6 @@
 # Hacker News TUI
 
-![Hacker News TUI screenshot](./readme.png)
+![Hacker News TUI screenshot](https://raw.githubusercontent.com/nearbycoder/hackernews-tui/main/readme.png)
 
 A full terminal UI for browsing Hacker News using the official [Hacker News API](https://github.com/HackerNews/API) and OpenTUI.
 

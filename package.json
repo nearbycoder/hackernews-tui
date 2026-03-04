@@ -25,6 +25,14 @@
     "opentui",
     "bun"
   ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nearbycoder/hackernews-tui.git"
+  },
+  "homepage": "https://github.com/nearbycoder/hackernews-tui#readme",
+  "bugs": {
+    "url": "https://github.com/nearbycoder/hackernews-tui/issues"
+  },
   "scripts": {
     "dev": "bun run src/index.tsx",
     "dev:watch": "bun run --watch src/index.tsx",
