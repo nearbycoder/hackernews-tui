@@ -1,17 +1,44 @@
 {
   "name": "hackernews-tui",
+  "version": "0.1.0",
+  "description": "A terminal UI for browsing Hacker News with search, filters, and deep threads.",
   "module": "src/index.tsx",
   "type": "module",
-  "private": true,
+  "private": false,
+  "bin": {
+    "hackernews-tui": "bin/hackernews-tui"
+  },
+  "files": [
+    "bin",
+    "src",
+    "README.md",
+    "readme.png"
+  ],
+  "publishConfig": {
+    "access": "public"
+  },
+  "keywords": [
+    "hackernews",
+    "hn",
+    "tui",
+    "terminal",
+    "opentui",
+    "bun"
+  ],
   "scripts": {
     "dev": "bun run src/index.tsx",
-    "dev:watch": "bun run --watch src/index.tsx"
+    "dev:watch": "bun run --watch src/index.tsx",
+    "test": "bun test",
+    "typecheck": "tsc --noEmit",
+    "lint": "biome lint .",
+    "format": "biome format --write .",
+    "check": "bun run lint && bun run typecheck && bun run test",
+    "prepublishOnly": "bun run check"
   },
   "devDependencies": {
-    "@types/bun": "latest"
-  },
-  "peerDependencies": {
-    "typescript": "^5"
+    "@biomejs/biome": "^2.4.5",
+    "@types/bun": "latest",
+    "typescript": "^5.9.3"
   },
   "dependencies": {
     "@opentui/core": "^0.1.84",

@@ -1,5 +1,7 @@
 # Hacker News TUI
 
+![Hacker News TUI screenshot](./readme.png)
+
 A full terminal UI for browsing Hacker News using the official [Hacker News API](https://github.com/HackerNews/API) and OpenTUI.
 
 ## Features
@@ -23,10 +25,32 @@ bun install
 bun dev
 ```
 
+Run from npm with Bun:
+
+```bash
+bunx hackernews-tui
+```
+
 Watch mode (auto-restart on file changes):
 
 ```bash
 bun run dev:watch
+```
+
+## Quality Checks
+
+```bash
+bun run typecheck
+bun run lint
+bun run format
+bun run test
+```
+
+## Publish
+
+```bash
+npm login
+npm publish --access public
 ```
 
 ## Keybindings
